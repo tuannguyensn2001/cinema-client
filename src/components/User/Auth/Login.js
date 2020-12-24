@@ -1,6 +1,8 @@
 import {React, useState} from 'react';
 import {TextField} from "@material-ui/core";
-import axios from 'axios';
+import {attempt,me} from "../../../services/AuthService";
+import {useDispatch} from "react-redux";
+import {setLogin} from "../../../actions/auth";
 
 const styleButton = {
     marginTop: '20px',
@@ -11,19 +13,24 @@ const styleButton = {
 function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const dispatch = useDispatch();
 
 
     const handleFormSubmit = event => {
         event.preventDefault();
-        axios.post('http://cinema.com/api/auth/login',{
-            email: username,
-            password,
-        })
-            .then(res=>console.log(res))
-            .catch(err=>{
-                console.log(err);
-                console.log("truot");
-            });
+        attempt(username,password)
+            .then(response => {
+                const data = response.data;
+                const token = data['access_token'];
+                const user = data.user;
+                localStorage.setItem('user_token', token);
+
+                dispatch(setLogin(user));
+
+                return me()
+            })
+            .then(response=>console.log(response))
+            .catch(err => console.log(err));
     }
 
     const handleInputForm = event => {

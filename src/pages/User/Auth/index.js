@@ -2,6 +2,7 @@ import React from 'react';
 import LayoutUser from "../../../components/User/Layouts";
 import {Link, useRouteMatch,Switch,Route} from 'react-router-dom';
 import Login from "../../../components/User/Auth/Login";
+import GuestRoute from "../../../routes/GuestRoute";
 
 const contentStyle={
     margin: 'auto',
@@ -26,13 +27,13 @@ function Auth(props)
            <div className="container">
                <div style={contentStyle}>
                    <Switch>
-                       <Route path={path} exact>
+                       <GuestRoute path={path} exact>
                            <Login/>
-                       </Route>
+                       </GuestRoute>
 
-                       <Route path={`${path}/register`}>
+                       <GuestRoute path={`${path}/register`}>
                            <h1>Day la dang ky</h1>
-                       </Route>
+                       </GuestRoute>
                    </Switch>
                </div>
 

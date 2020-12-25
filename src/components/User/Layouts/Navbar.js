@@ -18,6 +18,9 @@ function Navbar(props)
                         <li>
                             <Link to='/login'>Dang nhap</Link>
                         </li>
+                        <li>
+                            <Link to='/register'>Dang ky</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

@@ -1,23 +1,29 @@
 import {React, useState} from 'react';
-import {TextField} from "@material-ui/core";
+import {Form,Input,Button} from 'antd';
+import 'antd/dist/antd.css'
 import {attempt,me} from "../../../services/AuthService";
 import {useDispatch} from "react-redux";
 import {setLogin} from "../../../actions/auth";
+import {UserOutlined,LockOutlined} from '@ant-design/icons';
+import {useHistory} from 'react-router-dom';
 
 const styleButton = {
     marginTop: '20px',
 }
 
+const styleRoot = {
+    transition: '.2s ease-in',
+}
 
 
 function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const dispatch = useDispatch();
+    const history = useHistory();
 
 
     const handleFormSubmit = event => {
-        event.preventDefault();
         attempt(username,password)
             .then(response => {
                 const data = response.data;
@@ -27,15 +33,18 @@ function Login() {
 
                 dispatch(setLogin(user));
 
-                return me()
+                history.push('/');
+
             })
             .then(response=>console.log(response))
-            .catch(err => console.log(err));
+            .catch(err => {
+
+            });
     }
 
     const handleInputForm = event => {
         const option = {
-            username() {
+            email() {
                 setUsername(event.target.value);
             },
             password() {
@@ -48,53 +57,43 @@ function Login() {
 
     return (
         <div>
-            <form action="" onSubmit={handleFormSubmit} noValidate autoComplete="off">
-                <div className="form-group">
-                    <TextField
-                        label="Tên đăng nhập" variant="filled"
-                        value={username}
-                        type="text"
-                        name="username"
-                        id="outlined-basic"
-                        className="form-control"
-                        onChange={handleInputForm}
-                        style={{
-                            backgroundColor: '#fff',
-                        }}
-                    />
-                </div>
+            <Form
+            layout="vertical"
+            onFinish={handleFormSubmit}
+            name="login"
+            >
+                <Form.Item
+                label="Email"
+                >
+                    <Input
+                    onChange={handleInputForm}
+                    name="email"
+                    placeholder='Email'
+                    prefix={<UserOutlined/>}
 
-                <div className="form-group">
-                    <TextField
-                        label="Mật khẩu" variant="filled"
-                        value={password}
-                        type="password"
-                        name="password"
-                        id="password"
-                        onChange={handleInputForm}
                     />
-                </div>
-                <div className="form-group">
-                    <TextField
-                        id="date"
-                        label="Birthday"
-                        type="date"
-                        defaultValue="2017-05-24"
+                </Form.Item>
 
-                        InputLabelProps={{
-                            shrink: true,
-                        }}
+                <Form.Item
+                label='Mật khẩu'
+                >
+                    <Input.Password
+                    onChange={handleInputForm}
+                    name="password"
+                    placeholder='Mật khẩu'
+                    prefix={<LockOutlined />}
                     />
-                </div>
-                <div>
-                    <button
-                        className="btn btn-primary"
-                        style={styleButton}
-                        type="submit"
-                    >Đăng nhập
-                    </button>
-                </div>
-            </form>
+                </Form.Item>
+
+                <Form.Item>
+                    <Button
+                        type='primary'
+                        htmlType='submit'
+                    >
+                        Đăng nhập
+                    </Button>
+                </Form.Item>
+            </Form>
 
 
         </div>

@@ -1,0 +1,35 @@
+.menu_auth ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    color: #fff;
+}
+
+.menu_auth ul li {
+    width: 50%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu_auth ul li:hover{
+    cursor: pointer;
+}
+
+.menu_auth ul li a{
+    color: #000000;
+    display: block;
+}
+
+
+.active {
+    background-color: #03599d;
+}
+
+.active a {
+    color: #ffffff !important;
+}

@@ -3,7 +3,9 @@ import Navbar from "./Navbar";
 function LayoutUser(props)
 {
     return (
-        <div>
+        <div style={{
+            backgroundColor: '#f8f8f8'
+        }}>
             <Navbar/>
             {props.children}
         </div>

@@ -1,0 +1,47 @@
+.register {
+    background-color: #ffffff;
+}
+
+.register > form {
+    padding: 30px 10px 30px 10px;
+    width: 100%;
+}
+
+.register > form > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.register > form > div:first-child > div {
+    width: 45%;
+}
+
+.register > form > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register_button {
+    color: #fff;
+    background-color: #1890ff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    width: 60%;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    border: 1px solid transparent;
+    height: 30px;
+}
+
+.register_button:hover{
+    color: #fff;
+    background: #40a9ff;
+    border-color: #40a9ff;
+}
+ .register_button:focus{
+     color: #fff;
+     background: #40a9ff;
+     border-color: #40a9ff;
+     outline: none;
+ }

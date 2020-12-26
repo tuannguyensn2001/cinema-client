@@ -1,0 +1,42 @@
+.navbar_child > div {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.navbar_child{
+    background-color: black;
+    height: 25px;
+}
+
+.navbar_child ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.navbar_child ul li{
+    padding-left: 20px;
+}
+.navbar_child ul li:first-child{
+    padding-right: 20px;
+}
+
+.navbar_child ul li a{
+    color: #ffffff;
+}
+
+.navbar_child ul li a:hover{
+   text-decoration: underline;
+}
+
+.navbar_child ul li p{
+    color: #ffffff;
+}
+
+.navbar_child ul li p:hover{
+    cursor: pointer;
+}
+.navbar_child ul li:nth-child(2){
+    border-left: 1px solid white;
+}

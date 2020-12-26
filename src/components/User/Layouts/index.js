@@ -6,8 +6,13 @@ function LayoutUser(props)
         <div style={{
             backgroundColor: '#f8f8f8'
         }}>
-            <Navbar/>
-            {props.children}
+                <Navbar/>
+            <div style={{
+                marginTop: '100px',
+                minHeight: '700px',
+            }}>
+                {props.children}
+            </div>
         </div>
     )
 }

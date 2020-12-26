@@ -12,14 +12,14 @@
 
 @media (min-width: 768px) {
     .content {
-        width: 80%;
+        width: 85%;
     }
 }
 
 
 @media (min-width: 992px) {
     .content {
-        width: 70%;
+        width: 85%;
     }
 }
 

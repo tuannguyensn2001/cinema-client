@@ -1,0 +1,36 @@
+.mainFilm{
+
+}
+
+.mainFilm > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainFilm > div:first-child > ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    width: auto;
+    padding-left: 0;
+}
+
+.mainFilm > div:first-child > ul > li{
+    display: block;
+    padding: 7px;
+}
+
+.mainFilm > div:first-child > ul > li:hover{
+    cursor: pointer;
+}
+
+
+
+.active h4{
+    color: #03599d ;
+}
+
+.active{
+    border-bottom: 3px solid #337ab7;
+}

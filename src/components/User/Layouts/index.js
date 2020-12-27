@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from "./Navbar";
+import style from '../../../styles/User/Page/home.module.css'
 function LayoutUser(props)
 {
     return (
@@ -7,10 +8,7 @@ function LayoutUser(props)
             backgroundColor: '#f8f8f8'
         }}>
                 <Navbar/>
-            <div style={{
-                marginTop: '100px',
-                minHeight: '700px',
-            }}>
+            <div className={style.main}>
                 {props.children}
             </div>
         </div>

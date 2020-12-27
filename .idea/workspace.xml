@@ -4,11 +4,11 @@
     <list default="true" id="c1ff4af6-23b8-4199-b4e1-586b0a1ae21d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/Layouts/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Layouts/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/Auth/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Auth/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/Film/ListFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Film/ListFilm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/User/Layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Layouts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/User/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/User/Home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/User/Navbar/navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/Navbar/navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/User/RegisterPage/registerpage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/RegisterPage/registerpage.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/auth" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1m0edcPkegEJUvgyT1wH0PrF2t8" />
@@ -73,6 +78,9 @@
       <workItem from="1608877763384" duration="6373000" />
       <workItem from="1608905564297" duration="8686000" />
       <workItem from="1608915121919" duration="3485000" />
+      <workItem from="1608998922775" duration="6117000" />
+      <workItem from="1609037903370" duration="3343000" />
+      <workItem from="1609049051722" duration="1182000" />
     </task>
     <servers />
   </component>

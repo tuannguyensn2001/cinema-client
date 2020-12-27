@@ -20,7 +20,7 @@ function Home(props)
                     <Carousel/>
                 </div>
 
-                <div className="container">
+                <div className="container-xl ">
                     <div>
                         <ListFilm/>
                     </div>

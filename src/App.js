@@ -9,6 +9,7 @@ import {jwt_secret} from "./enum/contants";
 import GuestRoute from "./routes/GuestRoute";
 import LoginPage from "./pages/User/Auth/LoginPage";
 import RegisterPage from "./pages/User/Auth/RegisterPage";
+import Dashboard from "./pages/Admin/Dashboard";
 
 function App() {
     const dispatch = useDispatch();
@@ -40,6 +41,7 @@ function App() {
             <GuestRoute path='/login'><LoginPage/></GuestRoute>
             <GuestRoute path='/register'><RegisterPage/></GuestRoute>
 
+            <Route path='/admin' component={Dashboard}/>
         </Switch>
     </BrowserRouter>
   );

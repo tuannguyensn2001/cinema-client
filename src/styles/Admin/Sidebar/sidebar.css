@@ -1,0 +1,122 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c2c2c2;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.sidebar{
+    width: 15%;
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    border-right: 1px solid rgba(0,0,0,.0625);
+    z-index: 1;
+    transition: 0.2s ease-in;
+}
+
+.sidebar:hover{
+    width: 15%;
+    transition: all .4s ease;
+    z-index: 2;
+}
+
+.sidebar_inner{
+    height: 100%;
+}
+
+.sidebar_logo{
+    height: 10%;
+    border-bottom: 1px solid rgba(0,0,0,.0625);
+}
+
+.sidebar_menu{
+    height: 90%;
+    overflow: hidden;
+}
+
+.sidebar_menu > ul{
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+
+.sidebar_menu > ul > li{
+    display: flex;
+    padding: 5px;
+}
+
+.sidebar_menu > ul > li > a{
+    margin-left: 15px;
+}
+
+.sidebar_menu:hover ul {
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.sidebar:hover ul li a{
+    margin-left: 15px;
+}
+
+
+.sidebar_menu a:hover{
+    color: #283cd0 !important;
+}
+
+
+.sidebar_menu i {
+    padding-top: 3px;
+}
+
+.sidebar_menu > ul > li:hover{
+    cursor: pointer;
+}
+
+.sidebar_menu:hover{
+    overflow-y: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.hide{
+    width: 5%;
+    transition: 0.2s ease;
+}
+
+.hide ul {
+    padding-left: 27%;
+}
+
+.hide ul li a{
+    margin-left: 30px;
+}
+.hide:hover ul {
+    padding-left: 10px;
+}
+
+.hide:hover ul li a{
+    margin-left: 15px;
+}
+
+.sidebar li:hover a{
+    color: #283cd0;
+}
+
+.fa-grip-horizontal{
+    color: blue;
+}
+.fa-envelope{
+    color: green;
+}

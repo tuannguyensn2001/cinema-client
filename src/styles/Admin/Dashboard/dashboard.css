@@ -1,0 +1,15 @@
+.page_container{
+    width: 80%;
+    margin-left: 15%;
+}
+
+.main{
+    padding-top: 10%;
+    padding-left: 3%;
+    z-index: -1;
+}
+
+.hide_sidebar_container{
+    margin-left: 5%;
+    width: 95%;
+}

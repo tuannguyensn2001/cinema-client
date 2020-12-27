@@ -4,11 +4,9 @@
     <list default="true" id="c1ff4af6-23b8-4199-b4e1-586b0a1ae21d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/Layouts/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Layouts/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/Layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Layouts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/User/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/User/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/User/Navbar/navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/Navbar/navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/User/RegisterPage/registerpage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/RegisterPage/registerpage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1m0edcPkegEJUvgyT1wH0PrF2t8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

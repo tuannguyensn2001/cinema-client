@@ -27,7 +27,9 @@ function LayoutAdmin(props)
                     changeSidebar={changeSidebar}
                     isSidebarHide={isSidebarHide}
                 />
-                <div className="main">
+                <div className="main" style={{
+                    minHeight: '700px',
+                }}>
                     {props.children}
                 </div>
             </div>

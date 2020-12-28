@@ -4,10 +4,15 @@
     <list default="true" id="c1ff4af6-23b8-4199-b4e1-586b0a1ae21d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Layouts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/CreateFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/CreateFilm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/ListFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/ListFilm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/PageComponent/PageDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/PageComponent/PageDashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Admin/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Admin/Dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Admin/Dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Admin/Header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Admin/Header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/User/Common/carousel.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/User/Common/carousel.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/Auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Auth/Login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +89,7 @@
       <workItem from="1608998922775" duration="6117000" />
       <workItem from="1609037903370" duration="3343000" />
       <workItem from="1609049051722" duration="1207000" />
-      <workItem from="1609144941922" duration="6315000" />
+      <workItem from="1609144941922" duration="17600000" />
     </task>
     <servers />
   </component>

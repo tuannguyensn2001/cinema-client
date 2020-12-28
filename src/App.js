@@ -1,7 +1,6 @@
 import {React,useEffect} from 'react';
 import {BrowserRouter,Route,Switch} from "react-router-dom";
 import Home from "./pages/User/Home";
-import Auth from "./pages/User/Auth/LoginPage";
 import {useDispatch} from "react-redux";
 import {initUser} from "./actions/auth";
 import jwt from 'jsonwebtoken';

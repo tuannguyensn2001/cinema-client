@@ -1,16 +1,18 @@
 import {React, useState} from 'react';
 import {Form,Input,Button} from 'antd';
 import 'antd/dist/antd.css'
-import {attempt,me} from "../../../services/AuthService";
+import {attempt} from "../../../services/AuthService";
 import {useDispatch} from "react-redux";
 import {setLogin} from "../../../actions/auth";
 import {UserOutlined,LockOutlined} from '@ant-design/icons';
 import {useHistory} from 'react-router-dom';
 
+// eslint-disable-next-line no-unused-vars
 const styleButton = {
     marginTop: '20px',
 }
 
+// eslint-disable-next-line no-unused-vars
 const styleRoot = {
     transition: '.2s ease-in',
 }

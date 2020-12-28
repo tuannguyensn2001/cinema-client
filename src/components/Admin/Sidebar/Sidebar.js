@@ -1,4 +1,4 @@
-import {React,useRef,useEffect} from "react";
+import {React} from "react";
 import '../../../styles/Admin/Sidebar/sidebar.css'
 import classNames from 'classnames';
 import {useRouteMatch,Link} from 'react-router-dom';
@@ -21,6 +21,7 @@ const listSidebar = [
 
 function Sidebar(props)
 {
+    // eslint-disable-next-line no-unused-vars
     const {path,url} = useRouteMatch();
 
     const sidebar = listSidebar.map(item=>{

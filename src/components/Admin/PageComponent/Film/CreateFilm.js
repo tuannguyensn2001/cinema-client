@@ -1,16 +1,24 @@
 import {React, useState} from 'react';
-import {Form, Input,Select,DatePicker,Upload,message} from 'antd';
+import {Form, Input, Select, DatePicker, Upload, message, Switch, Button} from 'antd';
 import {CKEditor} from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import EditableTagGroup from "../../../Common/EditableTagGroup";
 import style from '../../../../styles/Admin/PageComponent/createfilm.module.css'
-import {LoadingOutlined,PlusOutlined} from "@ant-design/icons";
+import {LoadingOutlined, PlusOutlined} from "@ant-design/icons";
+import {createFilm} from "../../../../services/FilmService";
 
 function CreateFilm() {
+    const [name, setName] = useState('');
+    const [description, setDescription] = useState('');
     const [director, setDirector] = useState([]);
     const [actor, setActor] = useState([]);
-    const [category,setCategory] = useState([]);
+    const [category, setCategory] = useState([]);
+    const [thumbnail, setThumbnail] = useState('https://files.betacorp.vn/files/media%2fimages%2f2020%2f10%2f16%2fposter-csnm-6-165033-161020-82.jpg');
     const {Option} = Select;
+    const [time, setTime] = useState('');
+    const [language, setLanguage] = useState('en');
+    const [date, setDate] = useState('');
+    const [isPublished, setIsPublished] = useState(false);
 
 
     const add = type => {
@@ -22,7 +30,7 @@ function CreateFilm() {
             return newActor => {
                 setActor([...actor, newActor]);
             }
-        else if (type === 'category'){
+        else if (type === 'category') {
             return newCategory => {
                 setCategory([...category, newCategory]);
             }
@@ -31,11 +39,11 @@ function CreateFilm() {
     }
 
     const beforeUpload = file => {
-            const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
-            if (!isJpgOrPng) {
-                message.error('Bạn chỉ được phép tải ảnh dạng PNG/JPG!');
-            }
-            return isJpgOrPng ;
+        const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
+        if (!isJpgOrPng) {
+            message.error('Bạn chỉ được phép tải ảnh dạng PNG/JPG!');
+        }
+        return isJpgOrPng;
 
     }
 
@@ -54,6 +62,28 @@ function CreateFilm() {
             }
     }
 
+    const submitForm = () => {
+        const film = {
+            name,
+            description,
+            director: director.join(','),
+            actor: actor.join(','),
+            category: category.join(','),
+            thumbnail,
+            time,
+            language,
+            date,
+            'is_active': isPublished,
+        }
+
+        createFilm(film)
+            .then(data=>console.log(data))
+            .catch(err=>console.log(err));
+
+
+
+    }
+
 
     return (
         <div className={style.main}>
@@ -61,27 +91,35 @@ function CreateFilm() {
                 <div className="col-3 col-sm-3 col-md-3">
                     <div>
                         <Upload
-                        name='thumbnail'
-                        listType='picture-card'
-                        showUploadList={false}
-                        beforeUpload={beforeUpload}
+                            width='100%'
+                            name='thumbnail'
+                            listType='picture-card'
+                            showUploadList={false}
+                            beforeUpload={beforeUpload}
                         >
                             <PlusOutlined/>
-                            <div style={{ marginTop: 0 }}>Tải lên</div>
-
+                            <div style={{marginTop: 0}}>Tải lên</div>
                         </Upload>
+
+                        <img src={thumbnail} alt="" width="100%"/>
                     </div>
                 </div>
                 <div className="col-9 col-sm-9 col-md-9">
                     <Form
                         layout='horizontal'
+                        onFinish={submitForm}
+
                     >
                         <Form.Item
                             label='Tên '
+                            name='name'
                         >
                             <Input
                                 placeholder='Tên'
                                 name='name'
+                                onChange={event => {
+                                    setName(event.target.value)
+                                }}
                             />
                         </Form.Item>
 
@@ -94,23 +132,21 @@ function CreateFilm() {
                                 data=''
                                 onReady={editor => {
                                     // You can store the "editor" and use when it is needed.
-                                    console.log('Editor is ready to use!', editor);
                                 }}
                                 onChange={(event, editor) => {
                                     const data = editor.getData();
-                                    console.log({event, editor, data});
+                                    setDescription(data);
                                 }}
                                 onBlur={(event, editor) => {
-                                    console.log('Blur.', editor);
                                 }}
                                 onFocus={(event, editor) => {
-                                    console.log('Focus.', editor);
                                 }}
                             />
                         </Form.Item>
 
                         <Form.Item
                             label='Đạo diễn'
+                            name='director'
                         >
                             <EditableTagGroup
                                 tags={director}
@@ -145,35 +181,59 @@ function CreateFilm() {
                         <Form.Item
                             label='Thời lượng'
                         >
-                           <div className='d-flex'>
-                               <Input
-                                   placeholder='Thời lượng'
-                                   name='time'
-                               />
-                               <Select defaultValue="minutes" style={{ width: 120 }}>
-                                   <Option value="minutes">Phút</Option>
-                                   <Option value="hour">Giờ</Option>
-                               </Select>
-                           </div>
+                            <div className='d-flex'>
+                                <Input
+                                    placeholder='Thời lượng'
+                                    name='time'
+                                    type='number'
+                                    onChange={event => setTime(event.target.value)}
+                                />
+                                <Select
+                                    defaultValue="minutes"
+                                    style={{width: 120}}
+                                >
+                                    <Option value="minutes">Phút</Option>
+                                    <Option value="hour">Giờ</Option>
+                                </Select>
+                            </div>
                         </Form.Item>
 
 
                         <Form.Item
                             label='Ngôn ngữ'
                         >
-                            <Select defaultValue="en" style={{ width: 120 }}>
+                            <Select defaultValue="en" style={{width: 120}}
+                                    onChange={value => setLanguage(value)}
+                            >
                                 <Option value="en">Tiếng Anh</Option>
                                 <Option value="vi">Tiếng Việt</Option>
                             </Select>
                         </Form.Item>
 
                         <Form.Item
+                            label='Công chiếu'
+                        >
+                            <Switch
+                                onChange={(checked) => setIsPublished(checked)}
+                            />
+                        </Form.Item>
+
+                        <Form.Item
                             label='Ngày khởi chiếu'
                         >
-                           <DatePicker
-                           placeholder='Ngày khởi chiếu'
-                           />
+                            <DatePicker
+                                onChange={(value, string) => setDate(string)}
+                                placeholder='Ngày khởi chiếu'
+                            />
                         </Form.Item>
+
+                        <Form.Item>
+                            <Button
+                                htmlType='submit'
+                                type="primary"
+                            >Thêm mới</Button>
+                        </Form.Item>
+
 
                     </Form>
                 </div>

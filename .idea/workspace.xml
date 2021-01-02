@@ -4,15 +4,9 @@
     <list default="true" id="c1ff4af6-23b8-4199-b4e1-586b0a1ae21d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/Layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Layouts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/CreateFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/CreateFilm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/ListFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/ListFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/PageComponent/PageDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/PageComponent/PageDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/Auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/Auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enum/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/enum/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.wix.rt.settings.RTSettingsPage" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -89,7 +83,12 @@
       <workItem from="1608998922775" duration="6117000" />
       <workItem from="1609037903370" duration="3343000" />
       <workItem from="1609049051722" duration="1207000" />
-      <workItem from="1609144941922" duration="17600000" />
+      <workItem from="1609144941922" duration="17711000" />
+      <workItem from="1609252567511" duration="848000" />
+      <workItem from="1609253582996" duration="873000" />
+      <workItem from="1609255170469" duration="2004000" />
+      <workItem from="1609429868543" duration="20000" />
+      <workItem from="1609599987132" duration="8281000" />
     </task>
     <servers />
   </component>

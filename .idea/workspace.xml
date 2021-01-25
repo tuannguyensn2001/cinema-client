@@ -5,8 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/CreateFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/CreateFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/ListFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/PageComponent/Film/ListFilm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Sidebar/Sidebar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/enum/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/enum/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Admin/Dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Admin/Dashboard/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +90,18 @@
       <workItem from="1609255170469" duration="2004000" />
       <workItem from="1609429868543" duration="20000" />
       <workItem from="1609599987132" duration="8281000" />
+      <workItem from="1609679146827" duration="22000" />
+      <workItem from="1609996925836" duration="893000" />
+      <workItem from="1610088598427" duration="30000" />
+      <workItem from="1610382464499" duration="1290000" />
+      <workItem from="1610456922424" duration="164000" />
+      <workItem from="1610457211567" duration="40000" />
+      <workItem from="1611373007201" duration="873000" />
+      <workItem from="1611374165240" duration="689000" />
+      <workItem from="1611417629707" duration="170000" />
+      <workItem from="1611420561525" duration="905000" />
+      <workItem from="1611503484654" duration="1109000" />
+      <workItem from="1611505366185" duration="156000" />
     </task>
     <servers />
   </component>

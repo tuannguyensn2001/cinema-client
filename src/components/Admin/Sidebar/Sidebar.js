@@ -16,6 +16,12 @@ const listSidebar = [
         icon: 'fas fa-envelope',
         link: '/film',
     },
+    {
+        key: 3,
+        name: 'Quản lý lịch chiếu',
+        icon: 'fas fa-envelope',
+        link: '/screenings',
+    }
 ]
 
 
